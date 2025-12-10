@@ -25,6 +25,35 @@
         height: auto;
         width: 300px;
       }
+      
+      /* Governance Sub-menu Buttons */
+      .gov-links-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        z-index: 10; /* Ensure on top */
+        position: relative;
+      }
+
+      .gov-btn {
+        background-color: #06586b;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 8px;
+        font-size: 18px;
+        transition: background 0.3s, transform 0.2s;
+        border: 2px solid white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+
+      .gov-btn:hover {
+        background-color: #044050;
+        transform: translateY(-2px);
+      }
     </style>
     <!-- meta for theme-color -->
     <meta name="theme-color" content="#e9caa2" />
@@ -52,7 +81,7 @@
           </div>
 
           <div class="hero-center">
-            <img src="assets/img/logo.png" alt="logo" class="logo-center" />
+            <img src="assets/img/logo.png" alt="logo" class="logo-center" onclick="window.location.href='index.html'" style="cursor: pointer;" />
             <h1>NEGERI PARA SAI BATIN DAN ULAMA</h1>
 
             <div class="search">
@@ -76,18 +105,40 @@
       <div class="hamburger" id="hamburgerBtn">☰</div>
 
       <!-- NAVIGATION -->
-       <nav class="main-nav">
-        <div class="nav-item" onclick="window.location.href='index.html'">BERANDA</div>
-        <div class="nav-item" onclick="window.location.href='profil.html'">PROFIL</div>
-        <div class="nav-item" onclick="window.location.href='pariwisata.html'">PARIWISATA</div>
-        <div class="nav-item" onclick="window.location.href='lambang.html'">LAMBANG</div>
-
+      <nav class="main-nav">
+        <div class="nav-item" onclick="window.location.href='sejarah.html'">
+          SEJARAH
+        </div>
+        <div class="nav-item" onclick="window.location.href='lambang.html'">
+          LAMBANG
+        </div>
         <div class="nav-item dropdown">
           <button class="dropbtn">PEMERINTAHAN ▾</button>
           <ul class="dropdown-menu">
-            <li><div class="nav-item" onclick="window.location.href='profil_bupati.html'">BUPATI</div></li>
-            <li><div class="nav-item" onclick="window.location.href='profil_bupati.html'">WAKIL BUPATI</div></li>
-            <li><div class="nav-item" onclick="window.location.href='visi-misi.html'">VISI MISI</div></li>
+            <li>
+              <div
+                class="nav-item"
+                onclick="window.location.href='profil_bupati.html'"
+              >
+                BUPATI
+              </div>
+            </li>
+            <li>
+              <div
+                class="nav-item"
+                onclick="window.location.href='profil_wabup.html'"
+              >
+                WAKIL BUPATI
+              </div>
+            </li>
+            <li>
+              <div
+                class="nav-item"
+                onclick="window.location.href='visi-misi.html'"
+              >
+                VISI MISI
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -101,6 +152,11 @@
           <img src="assets/ikan.png" alt="Logo Ikan" class="logo-ikan" />
           <span class="divider">|</span>
           <h2 class="section-title">Pemerintahan Pesisir Barat</h2>
+        </div>
+        <div class="gov-links-container">
+          <a href="profil_bupati.html" class="gov-btn">BUPATI</a>
+          <a href="profil_wabup.html" class="gov-btn">WAKIL BUPATI</a>
+          <a href="visi-misi.html" class="gov-btn">VISI MISI</a>
         </div>
         <section class="content" aria-label="Deskripsi lambang">
           <div class="logo-wrapper">
@@ -262,19 +318,28 @@
       })();
     </script>
     <script>
+      // HAMBURGER MENU TOGGLE
+      const hamburger = document.getElementById("hamburgerBtn");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (hamburger && mainNav) {
+        hamburger.addEventListener("click", () => {
+          mainNav.classList.toggle("open");
+        });
+      }
+
+      // Dropdown Logic
       document.querySelectorAll(".nav-item.dropdown").forEach((drop) => {
         const btn = drop.querySelector(".dropbtn");
-
-        btn.addEventListener("click", function (e) {
-          e.stopPropagation();
-          drop.classList.toggle("open");
-        });
+        if(btn){
+            btn.addEventListener("click", function (e) {
+              e.stopPropagation();
+              drop.classList.toggle("open");
+            });
+        }
       });
-
       document.addEventListener("click", function () {
-        document
-          .querySelectorAll(".nav-item.dropdown.open")
-          .forEach((d) => d.classList.remove("open"));
+        document.querySelectorAll(".nav-item.dropdown.open").forEach((d) => d.classList.remove("open"));
       });
     </script>
   </body>

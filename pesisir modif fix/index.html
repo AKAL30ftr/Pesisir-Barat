@@ -17,7 +17,7 @@
     <header class="hero">
       <!-- LEFT HEADER -->
       <div class="hero-header">
-        <img src="assets/img/logo-small.png" class="hero-logo" />
+        <img src="assets/img/logo-small.png" class="hero-logo" onclick="window.location.href='index.html'" style="cursor: pointer;" />
         <div class="hero-text">
           <h3>PEMERINTAHAN</h3>
           <h4>KABUPATEN PESISIR BARAT</h4>
@@ -43,39 +43,6 @@
         </div>
         <div class="nav-item" onclick="window.location.href='pariwisata.html'">
           PARIWISATA
-        </div>
-        <div class="nav-item" onclick="window.location.href='lambang.html'">
-          LAMBANG
-        </div>
-
-        <div class="nav-item dropdown">
-          <button class="dropbtn">PEMERINTAHAN ▾</button>
-          <ul class="dropdown-menu">
-            <li>
-              <div
-                class="nav-item"
-                onclick="window.location.href='profil_bupati.html'"
-              >
-                BUPATI
-              </div>
-            </li>
-            <li>
-              <div
-                class="nav-item"
-                onclick="window.location.href='profil_wabup.html'"
-              >
-                WAKIL BUPATI
-              </div>
-            </li>
-            <li>
-              <div
-                class="nav-item"
-                onclick="window.location.href='visi-misi.html'"
-              >
-                VISI MISI
-              </div>
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -400,28 +367,14 @@
       }
 
       // HAMBURGER MENU TOGGLE
+      // HAMBURGER MENU TOGGLE
       const hamburger = document.getElementById("hamburgerBtn");
-      const mainNav = document.getElementById("mainNav");
+      const mainNav = document.querySelector(".main-nav");
 
       hamburger.addEventListener("click", () => {
         mainNav.classList.toggle("open");
       });
     </script>
-    <script>
-      document.querySelectorAll(".nav-item.dropdown").forEach((drop) => {
-        const btn = drop.querySelector(".dropbtn");
 
-        btn.addEventListener("click", function (e) {
-          e.stopPropagation();
-          drop.classList.toggle("open");
-        });
-      });
-
-      document.addEventListener("click", function () {
-        document
-          .querySelectorAll(".nav-item.dropdown.open")
-          .forEach((d) => d.classList.remove("open"));
-      });
-    </script>
   </body>
 </html>

@@ -68,7 +68,7 @@
           </div>
 
           <div class="hero-center">
-            <img src="assets/img/logo.png" alt="logo" class="logo-center" />
+            <img src="assets/img/logo.png" alt="logo" class="logo-center" onclick="window.location.href='index.html'" style="cursor: pointer;" />
             <h1>NEGERI PARA SAI BATIN DAN ULAMA</h1>
 
             <div class="search">
@@ -92,20 +92,13 @@
       <div class="hamburger" id="hamburgerBtn">☰</div>
 
       <!-- NAVIGATION -->
-       <nav class="main-nav">
-        <div class="nav-item" onclick="window.location.href='index.html'">
-          BERANDA
-        </div>
-        <div class="nav-item" onclick="window.location.href='profil.html'">
-          PROFIL
-        </div>
-        <div class="nav-item" onclick="window.location.href='pariwisata.html'">
-          PARIWISATA
+      <nav class="main-nav">
+        <div class="nav-item" onclick="window.location.href='sejarah.html'">
+          SEJARAH
         </div>
         <div class="nav-item" onclick="window.location.href='lambang.html'">
           LAMBANG
         </div>
-
         <div class="nav-item dropdown">
           <button class="dropbtn">PEMERINTAHAN ▾</button>
           <ul class="dropdown-menu">
@@ -290,19 +283,28 @@
       })();
     </script>
     <script>
+      // HAMBURGER MENU TOGGLE
+      const hamburger = document.getElementById("hamburgerBtn");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (hamburger && mainNav) {
+        hamburger.addEventListener("click", () => {
+          mainNav.classList.toggle("open");
+        });
+      }
+
+      // Dropdown Logic
       document.querySelectorAll(".nav-item.dropdown").forEach((drop) => {
         const btn = drop.querySelector(".dropbtn");
-
-        btn.addEventListener("click", function (e) {
-          e.stopPropagation();
-          drop.classList.toggle("open");
-        });
+        if(btn){
+            btn.addEventListener("click", function (e) {
+              e.stopPropagation();
+              drop.classList.toggle("open");
+            });
+        }
       });
-
       document.addEventListener("click", function () {
-        document
-          .querySelectorAll(".nav-item.dropdown.open")
-          .forEach((d) => d.classList.remove("open"));
+        document.querySelectorAll(".nav-item.dropdown.open").forEach((d) => d.classList.remove("open"));
       });
     </script>
   </body>
