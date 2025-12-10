@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pesisir Barat</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="theme-color" content="#e9caa2" />
+  </head>
+  <body>
+    <header class="hero">
+      <!-- LEFT HEADER -->
+      <div class="hero-header">
+        <img src="assets/img/logo-small.png" class="hero-logo" />
+        <div class="hero-text">
+          <h3>PEMERINTAHAN</h3>
+          <h4>KABUPATEN PESISIR BARAT</h4>
+        </div>
+      </div>
+
+      <!-- CENTER TITLES -->
+      <div class="hero-center">
+        <h1>SELAMAT DATANG DI WEBSITE RESMI</h1>
+        <h2>KABUPATEN PESISIR BARAT</h2>
+      </div>
+
+      <!-- HAMBURGER (MOBILE ONLY) -->
+      <div class="hamburger" id="hamburgerBtn">☰</div>
+
+      <!-- NAVIGATION -->
+      <nav class="main-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'">
+          BERANDA
+        </div>
+        <div class="nav-item" onclick="window.location.href='profil.html'">
+          PROFIL
+        </div>
+        <div class="nav-item" onclick="window.location.href='pariwisata.html'">
+          PARIWISATA
+        </div>
+        <div class="nav-item" onclick="window.location.href='lambang.html'">
+          LAMBANG
+        </div>
+
+        <div class="nav-item dropdown">
+          <button class="dropbtn">PEMERINTAHAN ▾</button>
+          <ul class="dropdown-menu">
+            <li>
+              <div
+                class="nav-item"
+                onclick="window.location.href='profil_bupati.html'"
+              >
+                BUPATI
+              </div>
+            </li>
+            <li>
+              <div
+                class="nav-item"
+                onclick="window.location.href='profil_wabup.html'"
+              >
+                WAKIL BUPATI
+              </div>
+            </li>
+            <li>
+              <div
+                class="nav-item"
+                onclick="window.location.href='visi-misi.html'"
+              >
+                VISI MISI
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN: gunakan .container agar konten tidak mepet -->
+    <main class="container">
+      <section class="event-section">
+        <h2 class="event-title">EVENT YANG AKAN DATANG</h2>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-btn btn-prev" aria-label="Sebelumnya">
+            ‹
+          </button>
+
+          <div class="carousel-track" id="carouselTrack">
+            <!-- CARD 1 -->
+            <div class="event-card">
+              <img
+                src="assets/krakataupng.png"
+                class="event-image"
+                alt="Krakatau"
+              />
+              <div class="event-info">
+                <h3>Krakatau Beach Fun Run</h3>
+                <a href="#">Lihat Selengkapnya...</a>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="event-card">
+              <img src="assets/hipmi.png" class="event-image" alt="Hipmi" />
+              <div class="event-info">
+                <h3>Hipmi Festival</h3>
+                <a href="#">Lihat Selengkapnya...</a>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <img
+                src="assets/krakataupng.png"
+                class="event-image"
+                alt="Krakatau"
+              />
+              <div class="event-info">
+                <h3>Krakatau Beach Fun Run</h3>
+                <a href="#">Lihat Selengkapnya...</a>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <img src="assets/hipmi.png" class="event-image" alt="Hipmi" />
+              <div class="event-info">
+                <h3>Hipmi Festival</h3>
+                <a href="#">Lihat Selengkapnya...</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-btn btn-next" aria-label="Berikutnya">
+            ›
+          </button>
+        </div>
+      </section>
+
+      <!-- BERITA & INFORMASI -->
+      <div class="card-table-berita">
+        <div class="header-table">
+          <div class="title berita-title">BERITA</div>
+          <div class="title info-title">INFORMASI</div>
+        </div>
+
+        <div class="content-table">
+          <!-- TABEL BERITA -->
+          <table class="table-berita">
+            <tr>
+              <td class="img-col">
+                <img src="assets/berita1.png" alt="" />
+              </td>
+              <td class="text-col">
+                <div class="judul">
+                  WAKIL BUPATI IRAWAN TOPANI BUKA KEGIATAN SINKRONISASI DATA
+                  AKSI KONVERGENSI STUNTING TINGKAT KABUPATEN
+                </div>
+                <div class="meta">
+                  <img src="assets/icon-date.png" alt="" /> 29/10/2025
+                  <img src="assets/icon-view.png" alt="" /> 300
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="img-col">
+                <img src="assets/berita2.png" alt="" />
+              </td>
+              <td class="text-col">
+                <div class="judul">
+                  WAKIL BUPATI IRAWAN TOPANI HADIRI KEGIATAN SAKAI SAMBAYAN:
+                  GURU BERKARYA
+                </div>
+                <div class="meta">
+                  <img src="assets/icon-date.png" alt="" /> 29/10/2025
+                  <img src="assets/icon-view.png" alt="" /> 300
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="img-col">
+                <img src="assets/berita3.png" alt="" />
+              </td>
+              <td class="text-col">
+                <div class="judul">
+                  SERAHKAN BANTUAN ATENSI, INI PESAN BUPATI DEDI IRAWAN
+                </div>
+                <div class="meta">
+                  <img src="assets/icon-date.png" alt="" /> 29/10/2025
+                  <img src="assets/icon-view.png" alt="" /> 300
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!-- TABEL INFORMASI -->
+          <table class="table-info">
+            <tr>
+              <td>Pengumuman Seleksi Calon Paskibraka Kabupaten</td>
+            </tr>
+            <tr>
+              <td>Informasi Pelayanan Publik</td>
+            </tr>
+            <tr>
+              <td>Agenda Rapat Pemerintah Daerah</td>
+            </tr>
+            <tr>
+              <td>Pengumuman Kelulusan CPNS</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- MISI -->
+      <section class="misi-section">
+        <h2 class="misi-title">MISI KABUPATEN PESISIR BARAT</h2>
+
+        <div class="misi-row">
+          <!-- MISI 1 -->
+          <div class="misi-item">
+            <img src="assets/infrastruktur.png" alt="" class="misi-icon" />
+            <div>
+              <p class="misi-text">
+                1. Infrastruktur Tangguh dan Berkelanjutan
+              </p>
+              <p class="misi-desc">
+                Mengembangkan Infrastruktur yang Berketahanan Pangan dan Tangguh
+                Bencana serta Berkelanjutan
+              </p>
+            </div>
+          </div>
+
+          <!-- MISI 2 -->
+          <div class="misi-item">
+            <div>
+              <p class="misi-text text-right">
+                2. Ekonomi Berbasis Potensi Lokal dan Kerakyatan
+              </p>
+              <p class="misi-desc">
+                Mendorong Pertumbuhan Ekonomi yang Berbasis Sumber Daya Alam dan
+                Ekonomi Kerakyatan
+              </p>
+            </div>
+
+            <img src="assets/ekonomi.png" alt="" class="misi-icon" />
+          </div>
+        </div>
+
+        <div class="misi-row">
+          <!-- MISI 3 -->
+          <div class="misi-item">
+            <img src="assets/sdm.png" alt="" class="misi-icon" />
+            <div>
+              <p class="misi-text">
+                3. Sumber Daya Manusia Unggul dan Kompetitif
+              </p>
+              <p class="misi-desc">
+                Memperkuat Sumber Daya Manusia yang Berkualitas dan Berdaya
+                Saing
+              </p>
+            </div>
+          </div>
+
+          <!-- MISI 4 -->
+          <div class="misi-item">
+            <div>
+              <p class="misi-text text-right">
+                4. Masyarakat Harmonis dan Berbudaya
+              </p>
+              <p class="misi-desc">
+                Mewujudkan Kehidupan Masyarakat yang Harmonis dan Berbudaya
+              </p>
+            </div>
+
+            <img src="assets/masyarakat.png" alt="" class="misi-icon" />
+          </div>
+        </div>
+
+        <!-- MISI 5 (SENDIRIAN DI TENGAH) -->
+        <div class="misi-row center">
+          <div class="misi-item center-item">
+            <img src="assets/pemerintah.png" alt="" class="misi-icon" />
+            <div>
+              <p class="misi-text center-text">
+                5. Pemerintahan Bersih dan Melayani
+              </p>
+              <p class="misi-desc">
+                Meningkatkan Kualitas Tata Kelola Pemerintahan dan Pelayanan
+                Publik
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <!-- ABOUT -->
+        <div class="footer-about">
+          <img src="assets/img/logo-small.png" alt="logo" class="footer-logo" />
+
+          <h2 class="footer-title">
+            PEMERINTAHAN <br />
+            <span>KABUPATEN PESISIR BARAT</span>
+          </h2>
+
+          <div class="footer-address">
+            <p>
+              <img src="assets/map.png" />
+              Jl. Kesuma No. 1 Gedung A Lt.1 Kompleks Perkantoran Pemda, Kec.
+              Pesisir Tengah
+            </p>
+            <p>Kabupaten Pesisir Barat, Provinsi Lampung – Indonesia 34874</p>
+
+            <p><img src="assets/wa.png" alt="" /> +62 853-6998-9990</p>
+            <p>
+              <img src="assets/email.png" style="width: 25px" alt="" />
+              admin@pesisirbaratkab.go.id
+            </p>
+          </div>
+        </div>
+
+        <!-- IKUTI KAMI -->
+        <div class="footer-follow">
+          <h3 class="footer-heading">IKUTI KAMI</h3>
+
+          <div class="social-icons">
+            <a href="#"><img src="assets/youtube.png" alt="yt" /></a>
+            <a href="#"><img src="assets/facebook.png" alt="fb" /></a>
+            <a href="#"><img src="assets/instagram.png" alt="ig" /></a>
+            <a href="#"><img src="assets/twitter.png" alt="tw" /></a>
+          </div>
+
+          <p class="link-website">
+            <img src="assets/web.png" alt="" /> https://pesisirbaratkab.go.id
+          </p>
+
+          <h3 class="footer-heading">STATISTIK PENGUNJUNG</h3>
+
+          <div class="visitor-stats">
+            <div>
+              <img src="assets/group.png" alt="" />
+              <p>Total</p>
+              <span>31,339</span>
+            </div>
+            <div>
+              <img src="assets/eye.png" alt="" />
+              <p>Hari Ini</p>
+              <span>79</span>
+            </div>
+            <div>
+              <img src="assets/calender.png" alt="" />
+              <p>Bulan Ini</p>
+              <span>405</span>
+            </div>
+            <div>
+              <img src="assets/calender-solid.png" alt="" />
+              <p>Tahun Ini</p>
+              <span>55,668</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="footer-map">
+          <h3 class="footer-heading">LOKASI</h3>
+          <img src="assets/lokasi.png" class="map-img" alt="Map" />
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="footer-bottom" style="text-align: center">
+        © <span id="year"></span> Pemerintah Kabupaten Pesisir Barat — All
+        rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const track = document.getElementById("carouselTrack");
+      const btnNext = document.querySelector(".btn-next");
+      const btnPrev = document.querySelector(".btn-prev");
+
+      if (btnNext && track) {
+        btnNext.onclick = () => {
+          track.scrollBy({ left: 500, behavior: "smooth" });
+        };
+      }
+      if (btnPrev && track) {
+        btnPrev.onclick = () => {
+          track.scrollBy({ left: -500, behavior: "smooth" });
+        };
+      }
+
+      // HAMBURGER MENU TOGGLE
+      const hamburger = document.getElementById("hamburgerBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      hamburger.addEventListener("click", () => {
+        mainNav.classList.toggle("open");
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".nav-item.dropdown").forEach((drop) => {
+        const btn = drop.querySelector(".dropbtn");
+
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          drop.classList.toggle("open");
+        });
+      });
+
+      document.addEventListener("click", function () {
+        document
+          .querySelectorAll(".nav-item.dropdown.open")
+          .forEach((d) => d.classList.remove("open"));
+      });
+    </script>
+  </body>
+</html>

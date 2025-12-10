@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pesisir Barat — Profil</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="sejarah.css" />
+    <style>
+      .logo-wrapper {
+        display: flex;
+        justify-content: center; /* posisi horizontal tengah */
+        margin-bottom: 20px; /* jarak dengan paragraf */
+      }
+
+      .logo-wrapper img {
+        max-width: 500px; /* optional: atur ukuran logo */
+        height: auto;
+        width: 300px;
+      }
+    </style>
+    <!-- meta for theme-color -->
+    <meta name="theme-color" content="#e9caa2" />
+  </head>
+  <body>
+    <!-- DARI SINI -->
+    <!-- TOP BAR / HERO -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-top container">
+        <!-- Welcome Text (Center) -->
+        <div class="hero-content">
+          <h1 class="hero-title">SELAMAT DATANG DI WEBSITE RESMI</h1>
+          <h2 class="hero-subtitle">KABUPATEN PESISIR BARAT</h2>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="official left-official">
+            <img
+              src="assets/img/bupati.png"
+              alt="bupati"
+              class="official-photo"
+            />
+          </div>
+
+          <div class="hero-center">
+            <img src="assets/img/logo.png" alt="logo" class="logo-center" />
+            <h1>NEGERI PARA SAI BATIN DAN ULAMA</h1>
+
+            <div class="search">
+              <input type="search" placeholder="Search..." id="searchInput" />
+              <button id="searchBtn" aria-label="search">🔍</button>
+            </div>
+          </div>
+
+          <div class="official right-official">
+            <img
+              src="assets/img/wakil.png"
+              alt="wakil"
+              class="official-photo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- sampe sini -->
+      <!-- HAMBURGER (MOBILE ONLY) -->
+      <div class="hamburger" id="hamburgerBtn">☰</div>
+
+      <!-- NAVIGATION -->
+        <nav class="main-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'">BERANDA</div>
+        <div class="nav-item" onclick="window.location.href='profil.html'">PROFIL</div>
+        <div class="nav-item" onclick="window.location.href='pariwisata.html'">PARIWISATA</div>
+        <div class="nav-item" onclick="window.location.href='lambang.html'">LAMBANG</div>
+
+        <div class="nav-item dropdown">
+          <button class="dropbtn">PEMERINTAHAN ▾</button>
+          <ul class="dropdown-menu">
+            <!-- <li><div class="nav-item" onclick="window.location.href='profil_bupati.html'">BUPATI</div></li> -->
+            <li>
+              <a href="./profil_bupati.html">BUPATI</a>
+            </li>
+            <li><div class="nav-item" onclick="window.location.href='profil_bupati.html'">WAKIL BUPATI</div></li>
+            <li><div class="nav-item" onclick="window.location.href='visi-misi.html'">VISI MISI</div></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="main-content">
+        <!-- HEADER berada di area background pink -->
+        <div class="content-header header-top">
+          <img src="assets/ikan.png" alt="Logo Ikan" class="logo-ikan" />
+          <span class="divider">|</span>
+          <h2 class="section-title">Lambang Pesisir Barat</h2>
+        </div>
+        <section class="content" aria-label="Deskripsi lambang">
+          <div class="logo-wrapper">
+            <img src="assets/img/logo.png" alt="Logo Daerah" />
+          </div>
+          <p>
+            Lambang Daerah merupakan panji kebesaran dan symbol kultural bagi
+            masyarakat daerah yang mencerminkan kekhasan daerah dalam Negara
+            Kesatuan Republik Indonesia. Lambang daerah berkedudukan sebagai
+            tanda identitas daerah, dan berfungsi sebagai pengikat kesatuan
+            sosial budaya masyarakat daerah dalam Negara Kesatuan Republik
+            Indonesia. Kabupaten Pesisir Barat sebagai daerah otonom yang secara
+            geografis terdiri dari dataran tinggi dan pegunungan memiliki
+            Lambang daerah yang terdiri dari logo daerah dan himne daerah dengan
+            menggambarkan kondisi wilayah dan kondisi masyarakat Pesisir Barat.
+            Secara filosofi keberadaan Logo di Kabupaten Pesisir Barat tersebut
+            mampu membangkitkan semangat, kebanggaan, keberuntungan dan
+            kemeriahan semua pihak yang terlibat secara langsung maupun tidak
+            langsung. Lambang Daerah tersebut mengangkat potensi alam maupun
+            budaya yang dimiliki daerah dengan semangat Helauni Kibaghong
+            sebagai semboyan masyarakat. Oleh karena itu, diperlukan Lambang
+            Daerah yang telah menggambarkan kondisi kekinian namun tetap
+            memiliki nilai filosofi akan Kabupaten Pesisir Barat. Harapannya
+            Lambang Daerah ini yang mengandung unsur nilai budaya, sejarah,
+            kondisi alam, kondisi masyarakat dapat menggambarkan potensi daerah,
+            harapan masyarakat daerah dan semboyan untuk mewujudkan harapan
+            serta mengajak masyarakat untuk membangun daerah.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <!-- ABOUT -->
+        <div class="footer-about">
+          <img src="assets/img/logo-small.png" alt="logo" class="footer-logo" />
+
+          <h2 class="footer-title">
+            PEMERINTAHAN <br />
+            <span>KABUPATEN PESISIR BARAT</span>
+          </h2>
+
+          <div class="footer-address">
+            <p>
+              <img src="assets/map.png" />
+              Jl. Kesuma No. 1 Gedung A Lt.1 Kompleks Perkantoran Pemda, Kec.
+              Pesisir Tengah
+            </p>
+            <p>Kabupaten Pesisir Barat, Provinsi Lampung – Indonesia 34874</p>
+
+            <p><img src="assets/wa.png" alt="" /> +62 853-6998-9990</p>
+            <p>
+              <img src="assets/email.png" style="width: 25px" alt="" />
+              admin@pesisirbaratkab.go.id
+            </p>
+          </div>
+        </div>
+
+        <!-- IKUTI KAMI -->
+        <div class="footer-follow">
+          <h3 class="footer-heading">IKUTI KAMI</h3>
+
+          <div class="social-icons">
+            <a href="#"><img src="assets/youtube.png" alt="yt" /></a>
+            <a href="#"><img src="assets/facebook.png" alt="fb" /></a>
+            <a href="#"><img src="assets/instagram.png" alt="ig" /></a>
+            <a href="#"><img src="assets/twitter.png" alt="tw" /></a>
+          </div>
+
+          <p class="link-website">
+            <img src="assets/web.png" alt="" /> https://pesisirbaratkab.go.id
+          </p>
+
+          <h3 class="footer-heading">STATISTIK PENGUNJUNG</h3>
+
+          <div class="visitor-stats">
+            <div>
+              <img src="assets/group.png" alt="" />
+              <p>Total</p>
+              <span>31,339</span>
+            </div>
+            <div>
+              <img src="assets/eye.png" alt="" />
+              <p>Hari Ini</p>
+              <span>79</span>
+            </div>
+            <div>
+              <img src="assets/calender.png" alt="" />
+              <p>Bulan Ini</p>
+              <span>405</span>
+            </div>
+            <div>
+              <img src="assets/calender-solid.png" alt="" />
+              <p>Tahun Ini</p>
+              <span>55,668</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="footer-map">
+          <h3 class="footer-heading">LOKASI</h3>
+          <img src="assets/lokasi.png" class="map-img" alt="Map" />
+        </div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="footer-bottom" style="text-align: center">
+        © <span id="year"></span> Pemerintah Kabupaten Pesisir Barat — All
+        rights reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+      // === JS (inlined) ===
+      // small interaction: click or press Enter/Space on emblem to toggle subtle enlarge class
+      (function () {
+        var emblem = document.getElementById("emblem");
+        if (!emblem) return;
+
+        emblem.addEventListener("click", function () {
+          emblem.classList.toggle("enlarged");
+        });
+
+        emblem.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            emblem.classList.toggle("enlarged");
+          }
+        });
+
+        // tahun footer
+        var y = new Date().getFullYear();
+        var el = document.getElementById("year");
+        if (el) el.textContent = y;
+      })();
+    </script>
+    <script>
+      document.querySelectorAll(".nav-item.dropdown").forEach((drop) => {
+        const btn = drop.querySelector(".dropbtn");
+
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          drop.classList.toggle("open");
+        });
+      });
+
+      document.addEventListener("click", function () {
+        document
+          .querySelectorAll(".nav-item.dropdown.open")
+          .forEach((d) => d.classList.remove("open"));
+      });
+    </script>
+  </body>
+</html>
